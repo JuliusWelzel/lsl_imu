@@ -1,0 +1,7 @@
+# I2C interface
+smbus
+pylsl
+board
+time
+adafruit_lsm6ds
+sparkfun-qwiic
