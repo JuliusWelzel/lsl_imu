@@ -63,4 +63,14 @@ while not flag_btn:
         flag_btn = False
 ```
 
+This is what the LSL streams would look like. 6 channels displayed represent the x-y-z component of the Accelerometer and Gyroscope respectively.
+
+![](lsl_streams.gif)
+
+## ToDo's
+- [ ] add calibration
+- [ ] implement online filter options
+- [ ] optimise repo setuptools
+- [ ] add support for additional IMUs
+
 v0.1.0
