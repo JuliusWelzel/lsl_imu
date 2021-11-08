@@ -50,7 +50,7 @@ imu_srate = 100
 # run streams depending on button status
 # click to start streaming to LSL
 # click again to stop stream
-imu_out = imu.createLsLStream(100) # create LSL stream for IMU
+imu_out = imu.create_lsl_stream(100) # create LSL stream for IMU
 btn.clear_event_bits()
 flag_btn = False
 
@@ -59,13 +59,13 @@ while not flag_btn:
     btn.LED_config(70,3000,1000)
     flag_btn = btn.has_button_been_clicked()
     if flag_btn:
-        imu.sendImuDataToLsL(imu_out,btn)
+        imu.send_imu_data_to_lsl(imu_out,btn)
         flag_btn = False
 ```
 
 This is what the LSL streams would look like. 6 channels displayed represent the x-y-z component of the Accelerometer and Gyroscope respectively.
 
-![](lsl_streams.gif)
+![](pictures/lsl_streams.gif)
 
 ## ToDo's
 - [ ] add calibration
